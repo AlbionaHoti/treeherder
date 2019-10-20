@@ -139,7 +139,7 @@ export class BugFilerClass extends React.Component {
     const parsedSummary = parseSummary(suggestion);
 
     let summaryString = parsedSummary[0].join(' | ');
-    if (jobGroupName.toLowerCase().includes('reftest')) {
+    if (jobGroupName.toLowerCase().includes('reftes')) {
       const re = /layout\/reftests\//gi;
       summaryString = summaryString.replace(re, '');
     }
